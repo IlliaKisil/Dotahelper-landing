@@ -1,11 +1,13 @@
-
 /* Add a black background color to the top navigation */
+
 .topnav {
     background-color: #333;
     overflow: hidden;
 }
 
+
 /* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -15,46 +17,101 @@
     font-size: 17px;
 }
 
+
 /* Change the color of links on hover */
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
+
 /* Add a color to the active/current link */
+
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
 
-.bg-main{
+.bg-main {
     background-color: aqua;
 }
 
-.home{
-    background-image: url("../resources/fpn.png");
-    background-size: 110% auto;
+.home {
+    background-position-x: center;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
     background-color: #333;
     font-size: large;
 }
 
+.main {
+    height: 90vh;
+    background: linear-gradient(to right top, rgb(26, 26, 26), rgb(59, 59, 59));
+}
+
+.about {
+    height: 45vh;
+}
+
+.manual {
+    height: 90vh;
+    background-color: black;
+}
+
+.manual img {
+    width: auto;
+    height: 90vh;
+    max-height: 90vh;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.carousel {
+    margin: auto;
+}
+
+#main {
+    padding-top: 100px;
+}
 
 .container-pages {
     margin: auto;
     width: 80%;
-    border: 5px solid #FFFF00;
+    /* border: 5px solid #FFFF00; */
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    
 }
 
-.custom-divider{
-    text-align:center;
+.custom-divider {
+    text-align: center;
     height: 2px;
     width: 100%;
     background: blue;
     background: linear-gradient(90deg, hsl(0, 0%, 20%), hsl(0, 0%, 70%), hsl(0, 0%, 20%));
     margin: 25px 0px 25px 0px;
+}
+
+footer {
+    background-color: black;
+}
+
+.app-text {
+    padding-top: 10px;
+}
+
+.app-img {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.app-img a {
+    padding: 30px;
+}
+
+section {
+    scroll-margin-top: 4.4em;
 }
