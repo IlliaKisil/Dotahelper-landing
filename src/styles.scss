@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: radial-gradient(rgb(61, 61, 61), rgb(11, 11, 11));
+    background-size: cover;
+}
+
+@font-face {
+    font-family: "Reaver";
+    src: url(/src/assets/fonts/Reaver-Regular.woff);
+}

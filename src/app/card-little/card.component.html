@@ -1,0 +1,7 @@
+<div class="wrapper" *ngIf="hero">
+    <div class="image">
+        <img [class.selected]="hero.selected" [src]=getImageLink(hero.heroId)>
+
+        <!-- <div class="text">{{hero.heroName}}</div> -->
+    </div>
+</div>

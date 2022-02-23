@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <div class="parent">
+        <div class="heroes">
+            <little-card *ngFor="let hero of heroes" [hero]="hero" (click)="select(hero.heroId)"></little-card>
+        </div>
+        <div class="checked-heroes">
+            <div class="team1">
+                <div>ALLY</div>
+                <div class="cards">
+                    <app-card *ngFor="let hero of teamOneHeroes" [hero]="hero" (click)="returnHero(hero.heroId, 1)"></app-card>
+                </div>
+            </div>
+            <div class="team2">
+                <div>ENEMY</div>
+                <div class="cards">
+                    <app-card *ngFor="let hero of teamTwoHeroes" [hero]="hero" (click)="returnHero(hero.heroId, 2)"></app-card>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <button (click)="getRecommended()">GET INFO</button>
+        </div>
+        <div class="recommend-heroes">
+            <div style="display: flex; justify-content: center; align-items: center">
+                <ng-template *ngIf="recommendedHeroes.length; else press">RECOMMENDED HEROES: </ng-template>
+                <ng-template #press>Pick heroes and click button.</ng-template>
+            </div>
+            <app-card *ngFor="let hero of recommendedHeroes" [hero]="hero"></app-card>
+        </div>
+
+    </div>
+</div>
