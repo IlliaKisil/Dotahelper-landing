@@ -1,6 +1,6 @@
 import {Hero} from "./app.component";
 
-export const API = 'http://localhost:5001/api/main/top-heroes'
+export const API = 'http://localhost:5000/api/main/top-heroes'
 
 export const heroes: Hero[] = [
   {
